@@ -4,7 +4,7 @@ import bgPattern from "@/public/images/bg-pattern.webp";
 import LayoutEffect from "@/components/LayoutEffect";
 import Link from "next/link";
 const Dartmouth = () => (
-  <section id = "dartmouth">
+  <section id="dartmouth">
     <GradientWrapper wrapperClassName="max-w-xs h-[13rem] top-12 inset-0">
       <div className="custom-screen py-28 relative">
         <LayoutEffect
@@ -28,7 +28,7 @@ const Dartmouth = () => (
                 width={200}
                 height={200}
                 alt="Picture of the author"
-                className="ml-[11.7rem] mt-[2rem]"
+                className="ml-[7.7rem] sm:ml-[11.6rem] md:ml-[11.7rem] mt-[2rem]"
               />
             </div>
           </div>
