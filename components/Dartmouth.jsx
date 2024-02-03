@@ -3,10 +3,13 @@ import Image from "next/image";
 import bgPattern from "@/public/images/bg-pattern.webp";
 import LayoutEffect from "@/components/LayoutEffect";
 import Link from "next/link";
+
 const Dartmouth = () => (
   <section id="dartmouth">
     <GradientWrapper wrapperClassName="max-w-xs h-[13rem] top-12 inset-0">
-      <div className="custom-screen py-28 relative">
+      <div className="flex items-center justify-center h-screen">
+        {" "}
+        {/* Adjusted for centering */}
         <LayoutEffect
           className="duration-1000 delay-300"
           isInviewState={{
@@ -14,21 +17,25 @@ const Dartmouth = () => (
             falseState: "opacity-0 translate-y-6",
           }}
         >
-          <div className="relative z-10">
-            <div className="max-w-xl mx-auto text-center">
-              <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
-                Scholarly-Endorsed Expansion: Project Dopamine's New Chapter
-              </h2>
-              <p className="mt-5 text-gray-300">
-                With Dartmouth's scholarly insight, Project Dopamine broadens to
-                new platforms, enriching mindful connectivity.
-              </p>
+          <div className="text-center">
+            {" "}
+            {/* Simplified for centering */}
+            <h2 className="text-gray-50 text-3xl font-semibold sm:text-4xl">
+              Scholarly-Endorsed Expansion: Project Dopamine's New Chapter
+            </h2>
+            <p className="mt-5 text-gray-300 w-[full] px-[1rem]">
+              With Dartmouth's scholarly insight, Project Dopamine broadens to
+              new platforms, enriching mindful connectivity.
+            </p>
+            <div className="inline-block">
+              {" "}
+              {/* Wrapped Image for better control */}
               <Image
                 src="/images/Feature-1.svg"
                 width={200}
                 height={200}
-                alt="Picture of the author"
-                className="ml-[7.7rem] sm:ml-[11.6rem] md:ml-[11.7rem] mt-[2rem]"
+                alt="Dartmouth logo"
+                className="mt-[2rem]"
               />
             </div>
           </div>
